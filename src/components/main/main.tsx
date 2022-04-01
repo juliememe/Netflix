@@ -24,35 +24,35 @@ export const Main: React.FC = () =>{
             description: 'Action & Adventure'
         },
         {
-            id: '1a',
+            id: 'd4',
             title: 'Pulp Fiction',
             year: 2004,
             description: 'Action & Adventure'
         },
-        {   id: "2b",
-            title: 'Pulp Fiction',
-            year: 2004,
-            description: 'Action & Adventure'
-        },
-        {
-            id: "3e",
+        {   id: "e5",
             title: 'Pulp Fiction',
             year: 2004,
             description: 'Action & Adventure'
         },
         {
-            id: '1a',
-            title: 'Pulp Fiction',
-            year: 2004,
-            description: 'Action & Adventure'
-        },
-        {   id: "2b",
+            id: "f6",
             title: 'Pulp Fiction',
             year: 2004,
             description: 'Action & Adventure'
         },
         {
-            id: "3e",
+            id: 'g7',
+            title: 'Pulp Fiction',
+            year: 2004,
+            description: 'Action & Adventure'
+        },
+        {   id: "h8",
+            title: 'Pulp Fiction',
+            year: 2004,
+            description: 'Action & Adventure'
+        },
+        {
+            id: "i9",
             title: 'Pulp Fiction',
             year: 2004,
             description: 'Action & Adventure'
