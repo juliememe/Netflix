@@ -1,0 +1,39 @@
+@use '../../../styles/variables' as variables;
+@use '../../../styles/mixins' as mixins;
+
+.headerContainer{
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  height: 100%;
+
+}
+.header{
+  height: 28vh;
+  background-image: url("../../../assets/cover.webp");
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerMiddle{
+  margin: 0 auto;
+  max-width: 600px;
+}
+.upperHeader{
+  display: flex;
+  justify-content: space-between;
+}
+.slogan{
+  @include mixins.fonts(30px, 200, variables.$white-color);
+  text-transform: uppercase;
+  font-family: variables.$mont-font;
+  margin: 25px 0 0;
+
+}
+.searchBar{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

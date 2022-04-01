@@ -1,0 +1,24 @@
+@use '../../../styles/variables' as variables;
+@use '../../../styles/mixins' as mixins;
+.searchBar{
+  @include mixins.fonts(18px, 300, variables.$white-color);
+  width: 500px;
+  border-radius: 3px;
+  padding: 10px 10px;
+  border: none;
+  background-color: variables.$dark-grey;
+  opacity: 0.9;
+  font-family: variables.$mont-font;
+}
+.searchBtn{
+  @include mixins.fonts(16px, 300, variables.$white-color);
+  background-color: variables.$pink-color;
+  width: 160px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-family: variables.$mont-font;
+  padding: 10px 10px;
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+}

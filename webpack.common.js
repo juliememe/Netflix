@@ -21,6 +21,15 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
+                test: /\.svg$/i,
+                issuer: /\.[jt]sx?$/,
+                use: ['@svgr/webpack'],
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+            {
                 test:/\.(s*)css$/,
                 exclude: /node_modules/,
                 use: [
@@ -39,7 +48,8 @@ module.exports = {
                         options: {
                             sourceMap: true,
                         }
-                    }
+                    },
+
                 ]
             },
             {
@@ -52,6 +62,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({template: "./src/index.html"}),
         new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin({filename : "[name].css", chunkFilename: "[id].css"})
+        new MiniCssExtractPlugin({filename : "[name].css", chunkFilename: "[id].css"}),
     ],
 };

@@ -1,0 +1,36 @@
+@use '../../../src/styles/variables' as variables;
+@use '../../../src/styles/mixins' as mixins;
+.main{
+ background-color: variables.$dark-grey;
+  min-height: 65vh;
+  height: 100%;
+  margin-top: 1vh
+
+}
+
+.mainContainer{
+ max-width: 1000px;
+   padding: 20px 0 60px;
+   margin: 0 auto;
+}
+.mainNavigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.allMovies{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.totalMovies{
+@include mixins.fonts(16px, 300, variables.$white-color);
+  font-family: variables.$mont-font;
+  margin-top: 20px;
+
+}
+.totalNumber{
+  font-weight: 600;
+}
