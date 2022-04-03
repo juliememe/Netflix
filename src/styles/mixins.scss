@@ -3,3 +3,12 @@
   font-weight: $font-weight;
   color: $font-color;
 }
+@mixin flex-box($just-content, $align-item){
+  display: flex;
+  justify-content: $just-content;
+  align-items: $align-item;
+}
+@mixin flex-direction($direction){
+  display: flex;
+  flex-direction: $direction;
+}
