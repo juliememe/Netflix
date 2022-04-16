@@ -1,0 +1,3 @@
+interface ModalMovieInterface{
+    modalTitle: string;
+}

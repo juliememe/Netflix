@@ -1,0 +1,33 @@
+@use '../../../styles/variables' as variables;
+@use '../../../styles/mixins' as mixins;
+
+.content{
+  @include mixins.flex-direction(column);
+  height: 28vh;
+  background-image: url("../../../assets/cover.webp");
+  background-size: contain;
+}
+.container{
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  height: 100%;
+
+}
+
+.middle{
+  margin: 0 auto;
+  max-width: 600px;
+}
+.upper{
+  display: flex;
+  justify-content: space-between;
+}
+.slogan{
+  @include mixins.fonts(30px, 200, variables.$white-color);
+  text-transform: uppercase;
+  font-family: variables.$mont-font;
+  margin: 25px 0 20px;
+
+}

@@ -1,0 +1,12 @@
+@use '../../../styles/variables' as variables;
+@use '../../../styles/mixins' as mixins;
+
+.content {
+  @include mixins.flex-box(center, center);
+  background-color: variables.$medium-grey;
+  height: 7vh;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  width: 100%;
+}

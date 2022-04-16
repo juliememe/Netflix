@@ -1,0 +1,20 @@
+@use '../../../../src/styles/variables'as variables;
+@use '../../../../src/styles/mixins'as mixins;
+
+.content {
+  @include mixins.modal-view(700px);
+}
+
+.cross {
+  @include mixins.cross-btn;
+}
+
+.title {
+  @include mixins.modal-title;
+}
+
+.subtitle {
+  @include mixins.modal-subtitle;
+  max-width: 300px;
+
+}

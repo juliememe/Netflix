@@ -1,0 +1,23 @@
+@use '../../styles/variables' as variables;
+@use '../../styles/mixins' as mixins;
+
+.view{
+@include mixins.fonts(14, 400, variables.$white-color);
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.reset{
+  background-color: variables.$dark-grey;
+  border: 1px solid variables.$pink-color;
+  color: variables.$pink-color;
+  padding: 10px 30px;
+}
+
+.submit{
+  background-color: variables.$pink-color;
+  border: 1px solid variables.$pink-color;
+  color: variables.$white-color;
+  padding: 10px 30px;
+}
