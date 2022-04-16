@@ -68,6 +68,7 @@ export const Main: React.FC = () =>{
             <Navigation/>
             <DropdownMenu/>
                 </div>
+                <div className={styles.border}></div>
             <h3 className={styles.totalMoviesCount}>
                 <span className={styles.totalNumber}>39</span> movies found
         </h3>

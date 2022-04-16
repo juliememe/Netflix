@@ -1,14 +1,67 @@
-@mixin fonts($font-size, $font-weight, $font-color){
+@use '../styles/variables.scss'as variables;
+
+@mixin fonts($font-size, $font-weight, $font-color) {
   font-size: $font-size;
   font-weight: $font-weight;
   color: $font-color;
+  font-family: 'Montserrat', sans-serif;
 }
-@mixin flex-box($just-content, $align-item){
+
+@mixin flex-box($just-content, $align-item) {
   display: flex;
   justify-content: $just-content;
   align-items: $align-item;
 }
-@mixin flex-direction($direction){
+
+@mixin flex-direction($direction) {
   display: flex;
   flex-direction: $direction;
+}
+
+@mixin modal-view($max-width) {
+  @include flex-box(center, center);
+  @include flex-direction(column);
+  max-width: $max-width;
+  width: 100%;
+  background-color: variables.$dark-grey;
+  position: relative;
+  z-index: 1;
+  margin: 15vh auto 0;
+  padding: 30px 30px 60px;
+
+}
+
+@mixin modal-title() {
+  @include fonts(24px, 200, variables.$white-color);
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+@mixin modal-subtitle() {
+  @include fonts(18px, 200, variables.$white-color);
+  text-align: center;
+  width: 100%;
+}
+
+@mixin input-field() {
+  @include fonts(16, 400, variables.$white-color);
+  background-color: variables.$input-grey;
+  border-radius: 3px;
+  padding: 12px;
+  border: none;
+  width: 100%;
+}
+
+@mixin cross-btn(){
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+@mixin separate-btns(){
+  margin-left: auto;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }

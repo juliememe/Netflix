@@ -1,0 +1,53 @@
+@use '../../../../src/styles/variables'as variables;
+@use '../../../../src/styles/mixins'as mixins;
+
+.content {
+  @include mixins.flex-box(center, center);
+  @include mixins.flex-direction(column);
+  max-width: 520px;
+  width: 100%;
+  background-color: variables.$dark-grey;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+  margin: 15vh auto 0;
+  padding: 30px 50px 100px;
+
+}
+
+.title {
+  @include mixins.fonts(24px, 200, variables.$white-color);
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.content label {
+  text-transform: uppercase;
+  margin: 20px 0 15px;
+  @include mixins.fonts(16px, 400, variables.$pink-color);
+}
+
+.email,
+.pass {
+  @include mixins.flex-direction(column);
+  width: 100%;
+}
+
+.email input,
+.pass input {
+  @include mixins.fonts(16, 400, variables.$white-color);
+  background-color: variables.$input-grey;
+  padding: 12px;
+  border: none;
+
+}
+
+.btn {
+ @include separate.btns;
+}
+
+.email input,
+.pass input {
+  width: 100%;
+}

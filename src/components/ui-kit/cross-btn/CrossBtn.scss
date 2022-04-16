@@ -1,0 +1,17 @@
+@use '../../../../src/styles/variables' as variables;
+.view{
+  cursor: pointer;
+}
+.view:after{
+    display: inline-block;
+    content: "\00d7"; /* This will render the 'X' */
+    color: variables.$white-color;
+    font-size: 32px;
+    transition: 0.3s;
+
+}
+.view:hover:after{
+  transition: 0.3s;
+  color: variables.$pink-color;
+}
+

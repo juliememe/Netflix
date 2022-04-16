@@ -1,0 +1,18 @@
+@use '../../../src/styles/mixins' as mixins;
+@use '../../../src/styles/variables' as variables;
+.content{
+  @include mixins.flex-direction(column);
+}
+
+.label{
+  @include mixins.fonts(14, 400, variables.$pink-color);
+  margin: 10px 0 15px;
+}
+.field{
+  @include mixins.fonts(16, 400, variables.$white-color);
+  background-color: variables.$input-grey;
+  padding: 12px;
+  border: none;
+  width: 100%;
+
+}
